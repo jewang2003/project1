@@ -226,3 +226,152 @@ output_b = "안녕안녕하세요".rfind("안녕")
 # 출력하기
 print("find():", output_a)
 print("rfind():", output_b)
+
+
+dictionary = {
+	"name": "7D 건조망고",
+	"type":"당절임",
+	"ingredient":["망고","설탕","메타중아황산나트륨","치자황색소"],
+	"origin":"필리핀"
+}
+
+for key in dictionary:
+        print(key,":",dictionary[key])
+
+print(range(5), list(range(5)))
+print(range(10), list(range(10)))
+print()
+
+print(range(0,5), list(range(0,5)))
+print(range(5,10), list(range(5,10)))
+print()
+
+print(range(0,10,2), list(range(0,10,2)))
+print(range(0,10,3), list(range(0,10,3)))
+print()
+
+
+for i in range(10):
+        print(str(i) + "번째 반복입니다")
+print()
+
+for i in range(5):
+        print(str(i) + " =반복 변수")
+print()
+
+for i in range(5, 10):
+        print(str(i) + " =반복 변수")
+print()
+
+for i in range(0, 10, 3):
+        print(str(i) + " =반복 변수")
+print()
+
+array = [273, 32, 103, 57, 52]
+
+for i in range(len(array)):
+        print("{}번째 반복: {}".format(i, array[i]))
+print()
+
+for i in reversed(range(10)):
+        print("{}번째 반복".format(i))
+print()
+
+
+i = 0
+while i<10:
+        print("{}번째 반복입니다.".format(i))
+        i += 1
+print()
+
+list_test = [1,2,1,2]
+value = 2
+while value in list_test:
+        list_test.remove(value)
+
+print(list_test)
+print()
+
+#import time
+#output = 0
+#target_tick = time.time() + 5
+#while time.time() < target_tick:
+#        output += 1
+#print("5초 동안 반복한 횟수:", output)
+#print()
+i=0
+
+# while True:
+#        print("{}번째 반복문 입니다.".format(i))
+#        i=i+1
+#        input_text = input("> 종료하시겠습니까?(y): ")
+#        if input_text in ["y", "x"]:
+#                print("반복을종료합니다.")
+#                break
+#print()
+
+
+numbers = [5, 15, 6, 20, 7, 25]
+
+for number in numbers:
+        if number < 10:
+                continue
+        print(number)
+print()
+
+
+string = "Hello Programing"
+
+output = string.upper()
+print("string.upper():", output)
+
+output = string.lower()
+print("string.lower():", output)
+
+output = string.split(" ")
+print("string.split():", output)
+print()
+
+list_a = [1,2,3,4]
+
+list_a.append(1)
+print("list_a.append(1)", list_a)
+
+list_a.remove(2)
+print("list_a.remove(2)", list_a)
+
+list_a.pop()
+print("list_a.pop()", list_a)
+print()
+
+test = (
+        "이렇게 입력해도"
+        "하나의 문자열로 연결되어"
+        "생성된답니다."
+)
+
+print("test:", test)
+print("type(test):", type(test))
+print()
+
+test = (
+        "이렇게 입력해도",
+        "하나의 문자열로 연결되어",
+        "생성된답니다."
+)
+
+print("test:", test)
+print("type(test):", type(test))
+print()
+
+print("::".join(["1","2","3","4","5"]))
+print()
+
+number = int(input("정수 입력> "))
+
+if number % 2 == 0:
+        print("\n".join(["입력한 문자열은 {}입니다.".format(number), "{}는 짝수입니다.".format(number)]))
+              
+else:
+        print("\n".join(["입력한 문자열은 {}입니다.".format(number), "{}는 홀수입니다.".format(number)]))
+              
